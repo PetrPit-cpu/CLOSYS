@@ -1,0 +1,959 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('MontserratVariableFont_wght'),
+         url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 1100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('MontserratItalicVariableFont_wght'),
+         url('../fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 1000;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Black'),
+         url('../fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Black Italic'),
+         url('../fonts/Montserrat-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'),
+         url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold Italic'),
+         url('../fonts/Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat ExtraBold'),
+         url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat ExtraBold Italic'),
+         url('../fonts/Montserrat-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat ExtraLight'),
+         url('../fonts/Montserrat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('MontserratItalic'),
+         url('../fonts/Montserrat-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('MontserratLightItalic'),
+         url('../fonts/Montserrat-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('MontserratMedium'),
+         url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'Montserrat';
+    src: local('MontserratMediumItalic'),
+         url('../fonts/Montserrat-MediumItalic.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+  }
+
+@font-face {
+    font-family:'Montserrat';
+    src: local('MontserratSemiBold'),
+         url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+  }
+
+@font-face {
+    font-family:'Montserrat';
+    src:     local('MontserratSemiBoldItalic'),
+      url('../fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+  }
+
+@font-face {
+    font-family:'Montserrat';
+    src: local('MontserratThin'),
+         url('../fonts/Montserrat-Thin.ttf') format('truetype');
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+  }
+
+@font-face {
+    font-family:'Montserrat';
+    src: local('MontserratThinItalic'),
+        url('../fonts/Montserrat-ThinItalic.ttf') format('truetype');
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+  }
+
+ @font-face {
+    font-family:'Montserrat';
+    src: local('MontserratRegular'),
+         url('../fonts/Montserrat-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+    font-family:'Montserrat';
+    src: local('MontserratLight'),
+         url('../fonts/Montserrat-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+    font-family:'Montserrat';
+    src: local('MontserratBold'),
+         url('../fonts/Montserrat-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+  }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+/*.container {
+    margin: 0px 315px;
+    max-width: 1920px;
+}*/
+
+/*header*/
+
+.header__container {
+    max-width: 1920px;
+    padding: 46.5px 315px 108px 315px;
+}
+
+.header__list-item,
+.header__list-nav {
+    align-items: center;
+}
+
+.header__list-item {
+    margin-right: auto;
+    gap: 10px;
+}
+
+.header__nav {
+    gap: 206.5px
+}
+
+.header__list-nav {
+    padding: 11.5px 34.5px;
+    background-color: #FDFDFD;
+    border-radius: 45px;
+    border: 1px solid #0E0E0E;
+    gap: 40px;
+}
+
+.header__btn {
+    padding: 14px 32px;
+    color: #FDFDFD;
+    border-radius: 45px;
+    border: none;
+    background-color: #0E0E0E;
+    cursor: pointer;
+}
+
+/*one*/
+
+.one__container {
+    padding: 0px 315px;
+    max-width: 1920px;
+}
+
+.one__block-1 {
+    max-width: 630px;
+}
+
+.one__title {
+    margin: 0 0 43px 0;
+    font-weight: 500;
+    color: #0E0E0E;
+    font-size: 96px;
+}
+
+.one__btn {
+    gap: 15px;
+    padding: 14px 32px;
+    font-size: 18px;
+    color: #FDFDFD;
+    border-radius: 45px;
+    border: none;
+    background-color: #0E0E0E;
+    cursor: pointer;
+}
+
+.one__list-item-1 {
+    flex-direction: column;
+}
+
+.one__item-icon {
+    position: relative;
+}
+
+.img-1 {
+    position: relative;
+    right: 15px;
+    z-index: -1;
+}
+
+.img-2 {
+    position: relative;
+    right: 30px;
+    z-index: -2;
+}
+
+.item-1 {
+    margin-bottom: 204px;
+}
+
+.one__img-1 {
+    max-width: 66px;
+    min-height: 66px;
+}
+
+.one__rating {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.one__item-2 {
+    align-items: center;
+    gap: 18px;
+}
+
+.one__text-1 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.one__item-2 {
+    margin-bottom: 16px;
+}
+
+.one__item-two {
+    gap: 23px;
+}
+
+.one__list-item-2 {
+    margin-bottom: 212px;
+    gap: 56px;
+}
+
+.one__title-1 {
+    font-weight: 500;
+    color: #0E0E0E;
+    font-size: 96px;
+}
+
+.one__title-2 {
+    font-weight: 600;
+    color: #0E0E0E;
+    font-size: 96px;
+}
+
+.one__item-number-3 {
+    margin-bottom: 49px;
+}
+
+.one__text-number-3 {
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0E0E0E;
+}
+
+.one__list-item-2 {
+    justify-content: flex-end;
+    margin-top: 35px;
+}
+
+.one__line-1 {
+    width: 100%; /* Длина линии */
+    height: 1px; /* Толщина линии */
+    background-color: #0E0E0E; /* Цвет линии */
+    opacity: 40%;
+    margin: 0 auto; /* Центрируем линию (если она находится внутри отличающегося от 1440px контейнера) */
+}
+
+.one__content {
+    padding: 33.4px 315px;
+    max-width: 1920px;
+}
+
+.one {
+   padding-bottom: 175px;
+}
+
+/*two*/
+
+.two__container {
+    padding: 0 315px;
+}
+
+.card-container {
+    display: flex; /* Устанавливаем карточки в один ряд */
+    gap: 30px; /* Расстояние между карточками */
+    width: 1290px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+.card {
+    width: 410px; /* Ширина карточки */
+    height: 331px; /* Высота карточки */
+    display: flex; /* Flexbox для выравнивания содержимого */
+    flex-direction: column; /* Размещаем элементы вертикально */
+    background-color: #f4f4f4; /* Цвет фона карточки */
+    border-radius: 15px; /* Слегка скругляем углы */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень справа и снизу */
+}
+
+.card-icon {
+    width: 57px; /* Задаём размер иконки */
+    height: 57px;
+}
+
+.card-text {
+    max-width: 231px;
+    font-size: 18px; /* Размер текста */
+    color: #363853; /* Цвет текста */
+}
+
+.card-block {
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 37px;
+    margin-right: 38px;
+}
+
+.card-btn {
+    margin-top: 40px;
+    max-width: 143px;
+    min-height: 37px;
+    margin-left: 37px;
+    margin-bottom: 157px;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    color: #363853;
+    border: 1px solid #363853;
+    border-radius: 45px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card-btn:hover {
+    background-color: #034eb3; /* Изменяем цвет кнопки при наведении */
+}
+
+.two {
+    padding-bottom: 152px;
+}
+
+/*section3*/
+
+.three-container {
+    width: 1290px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+    justify-content: space-between;
+}
+
+.three-title {
+    max-width: 292px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #0E0E0E;
+    margin: 0 0 42px 0px;
+}
+
+.item-text {
+    font-weight: 400;
+    font-size: 20px;
+    color: #0E0E0E;
+    line-height: 30px;
+    margin-bottom: 46px;
+}
+
+.three-card-list-item {
+    flex-direction: column;
+    max-width: 399px;
+    height: 100%;
+}
+
+.three-btn {
+    color: #FDFDFD;
+    padding: 14px 32px;
+    background-color: #0E0E0E;
+    border-radius: 45px;
+    cursor: pointer;
+    border: none;
+}
+
+.three-card-title {
+    max-width: 752px;
+    height: 100%;
+    margin: 0;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 78px;
+    color: #0E0E0E;
+}
+
+.three {
+    margin-bottom: 175px;
+}
+
+/*section4*/
+
+.four-container {
+    width: 1290px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+    justify-content: space-between;
+}
+
+.four-title {
+    margin: 0 0 68px 0;
+    font-weight: 500;
+    color: #0E0E0E;
+    font-size: 48px;
+}
+
+.four-list-items {
+    max-width: 719px;
+    flex-direction: column;
+}
+
+.four-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 76px;
+}
+
+.four-block {
+    flex-direction: column;
+}
+
+.four-text-1 {
+    line-height: 57px;
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.four-text-2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.item-4 {
+    display: flex;
+    gap: 62px;
+    margin-bottom: 74px;
+}
+
+.four-list-items-2 {
+    gap: 42px;
+    flex-direction: column;
+}
+
+.four-card {
+    width: 467px; /* Ширина карточки */
+    height: 152px; /* Высота карточки */
+    display: flex; /* Flexbox для выравнивания содержимого */
+    flex-direction: column; /* Размещаем элементы вертикально */
+    background-color: #f4f4f4; /* Цвет фона карточки */
+    border-radius: 15px; /* Слегка скругляем углы */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень справа и снизу */
+}
+
+.four-card-block {
+    padding-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 37px;
+    margin-right: 38px;
+}
+
+.four-card-text {
+    max-width: 231px;
+    font-size: 18px; /* Размер текста */
+    color: #363853; /* Цвет текста */
+}
+
+.four-card-icon {
+    width: 57px; /* Задаём размер иконки */
+    height: 57px;
+}
+
+.four-btn {
+    padding: 18.5px 76.5px;
+    background-color: #0E0E0E;
+    color: #f4f4f4;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.four {
+    margin-bottom: 178px;
+}
+
+.five-item-1 {
+    font-style: italic;
+    font-family: 'MontserratMediumItalic', sans-serif;
+    font-size: 96px;
+    color: #0E0E0E;
+    opacity: 40%;
+    margin-left: -1325px;
+}
+
+.gradient-text {
+    font-style: italic;
+    font-family: 'MontserratMediumItalic', sans-serif;
+    font-size: 96px;
+    background: linear-gradient(to bottom, #F8A3A8, #E5E1AB);
+        -webkit-background-clip: text;
+        color: transparent;
+    margin-left: 305px;
+}
+
+.five-item-1,
+.five-item-2 {
+    margin-bottom: 42px;
+}
+
+.five-item-3 {
+    font-style: italic;
+    font-family: 'MontserratMediumItalic', sans-serif;
+    font-size: 96px;
+    color: #0E0E0E;
+    opacity: 40%;
+    margin-left: -508px;
+}
+
+.five {
+    margin-bottom: 175px;
+}
+
+/*six*/
+
+.six-container {
+    display: block;
+    margin: 0 auto;
+}
+
+.six-title {
+    display: block;
+    margin: 0 auto;
+    max-width: 872px;
+    font-weight: 500;
+    color: #0E0E0E;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 38px;
+}
+
+.six-text {
+    display: block;
+    margin: 0 auto;
+    max-width: 716px;
+    text-align: center;
+    color: #0E0E0E;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.five-card {
+    width: 465px; /* Ширина карточки */
+    height: 680px; /* Высота карточки */
+    display: flex; /* Flexbox для выравнивания содержимого */
+    flex-direction: column; /* Размещаем элементы вертикально */
+    background-color: #f4f4f4; /* Цвет фона карточки */
+    border-radius: 15px; /* Слегка скругляем углы */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень справа и снизу */
+}
+
+.four-card-block {
+    padding-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 37px;
+    margin-right: 38px;
+}
+
+.four-card-text {
+    max-width: 231px;
+    font-size: 18px; /* Размер текста */
+    color: #363853; /* Цвет текста */
+}
+
+.four-card-icon {
+    width: 57px; /* Задаём размер иконки */
+    height: 57px;
+}
+
+.four-btn {
+    padding: 18.5px 76.5px;
+    background-color: #0E0E0E;
+    color: #f4f4f4;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.five-list-items {
+    gap: 30px;
+    justify-content: center;
+}
+
+.five-text {
+    color: #0E0E0E;
+    font-size: 25.85px;
+}
+
+.five-text-2 {
+    font-weight: 500;
+    font-size: 51.7px;
+    color: #0E0E0E;
+}
+
+.five-text-3 {
+    font-weight: 400;
+    font-size: 25.85px;
+    color: #0E0E0E;
+}
+
+.five-block-1 {
+    margin-bottom: 74.97px;
+    margin-left: 51px;
+    align-items: baseline;
+}
+
+.five-text-4 {
+    font-size: 23.27px;
+    font-weight: 400;
+    color: #0E0E0E;
+}
+
+.five-text-5 {
+    font-size: 23.27px;
+    font-weight: 400;
+    color: #0E0E0E;
+    opacity: 50%;
+}
+
+.five-img {
+    opacity: 50%;
+}
+
+.five-block-2 {
+    margin-left: 51px;
+    gap: 15.51px;
+    align-items: center;
+}
+
+.block-2 {
+    margin-bottom: 74.97px;
+}
+
+.five-text {
+    margin-top: 66.68px;
+    margin-left: 51px;
+    margin-bottom: 18.1px;
+}
+
+.five-item-list {
+    gap: 15.51px;
+    flex-direction: column;
+}
+
+.five-btn {
+    padding: 14.11px 38.82px;
+    align-items: center;
+    line-height: 38.08px;
+    max-width: 305.05px;
+    min-height: 67.21px;
+    font-weight: 400;
+    font-size: 25.85px;
+    background-color: #0E0E0E;
+    color: #f4f4f4;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.five-card-1 {
+    margin-left: 51px;
+}
+
+.six-text {
+    margin-bottom: 111px;
+}
+
+.six {
+    padding-bottom: 175px;
+}
+
+/*seven*/
+
+.seven-container {
+    max-width: 1322px;
+    display: block;
+    margin: 0 auto;
+}
+
+.seven-item-1 {
+    max-width: 579px;
+    font-size: 64px;
+    font-weight: 500;
+    color: #0E0E0E;
+}
+
+.seven-item-2 {
+    max-width: 292px;
+    min-height: 292px;
+}
+
+.seven-list {
+    justify-content: space-between;
+}
+
+.seven-text {
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #0E0E0E;
+    font-size: 20px;
+    opacity: 40%;
+    margin-bottom: 24px;
+}
+
+.seven-subtitle-text {
+    font-style: italic;
+    font-family: 'MontserratMediumItalic', sans-serif;
+    font-size: 32px;
+    color: #0E0E0E;
+    line-height: 45px;
+    min-height: 273px;
+}
+
+.seven-item-3 {
+    max-width: 1041px;
+}
+
+.seven-list-1 {
+    justify-content: space-between;
+}
+
+.seven-img-block {
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.seven-1-img {
+    padding-bottom: 50px;
+    max-width: 52px;
+    min-height: 52px;
+}
+
+.seven {
+    padding-bottom: 175px;
+}
+
+/*section8*/
+
+.eight {
+    max-width: 1920px;
+    width: 100%;
+    min-height: 861px;
+    background-color: #0E0E0E;
+}
+
+.eight-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1288px;
+    min-height: 614px;
+}
+
+.eight__list-item {
+    gap: 12px;
+    align-items: center;
+}
+
+.eight__list-nav {
+    align-items: center;
+    margin-top: 62px;
+    align-items: center;
+    padding: 11.5px 34.5px;
+    background-color: #0E0E0E;
+    border-radius: 45px;
+    border: 1px solid #FDFDFD;
+    gap: 40px;
+}
+
+.eight__text-nav {
+    display: flex;
+    color: #FDFDFD;
+}
+
+.eight-container  {
+    flex-direction: column;
+}
+
+.eight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eight-text-subtitle {
+    margin-top: 62px;
+    font-weight: 500;
+    color: #ffffff;
+    opacity: 60%;
+    max-width: 709px;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.eight-list-1,
+.eight-list-2,
+.eight-list-3,
+.eight-list-4 {
+    flex-direction: column;
+}
+
+.eight-link {
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 80%;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.link-8 {
+    margin-bottom: 48px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.eight-block {
+    margin-top: 62px;
+    gap: 197.33px;
+}
+
+.eight-list-1 li:last-child,
+.eight-list-2 li:last-child,
+.eight-list-3 li:last-child,
+.eight-list-4 li:last-child {
+    margin-bottom: 0; /* Устанавливаем нижний отступ последнего элемента списка на 0 */
+}
+
